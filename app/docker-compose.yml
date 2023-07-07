@@ -1,0 +1,9 @@
+services:
+  app-csv:
+  # nombre del servicio, puede ser cualquiera
+    build:
+    # instrucción
+      context: .
+      # el contexto es la carpeta en la que estamos ubicados (por eso .)
+      dockerfile: Dockerfile
+      # indicamos cúal es el dockerfile que vamos a leer (en este caso es Dockerfile)
