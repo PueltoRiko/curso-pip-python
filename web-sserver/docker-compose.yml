@@ -1,0 +1,11 @@
+services:
+  web-server:
+  # nombre del servicio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - '80:80'
+      # enlazamos el puerto de la máquina con el puerto del contenedor

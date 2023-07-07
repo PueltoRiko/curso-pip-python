@@ -7,3 +7,7 @@ services:
       # el contexto es la carpeta en la que estamos ubicados (por eso .)
       dockerfile: Dockerfile
       # indicamos cúal es el dockerfile que vamos a leer (en este caso es Dockerfile)
+    volumes:
+    # viculación para trabajar el día a día  
+      - .:/app
+      # este proyecto (. = todos los archivos) estan enlazados (:) hacia la carpeta que está dentro del contenedor (/app)
